@@ -1,0 +1,208 @@
+
+$white: #fff;
+$orange: #F1AB02;
+$green: #A4CD39;
+$brick_hard: #D25901;
+$brick_light: #960000;
+$blue_soft: #E4F4FA;
+
+.x-viewport {
+    overflow: visible !important; 
+}
+
+.mainbody .x-panel-body {
+    overflow: visible; 
+    background-color: $orange;
+    border-width: 0px;
+}
+
+.boxOne .x-panel-body {
+    overflow: visible; 
+    background-color: $white;
+}
+
+.boxEven .x-panel-body {
+    overflow: visible; 
+    background-color: $orange;
+    border-width: 0px;
+}
+
+.boxOdd .x-panel-body {
+    overflow: visible; 
+    background-color: $green;
+    border-width: 0px;
+}
+
+.boxEven, .boxOdd {
+    overflow: visible !important;
+    .x-box-inner {
+        overflow: visible !important;
+    }
+} 
+
+.intro_head1 {
+    font-family: Haettenschweiler, "Arial Narrow", sans-serif;
+    font-size: 44pt;
+    color: $brick_hard;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.intro_head2 {
+    color: $orange;
+    font-size: 30pt;
+    font-family: tahoma;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.small {
+    font-family: tahoma;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.medium {
+    font-family: tahoma;
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+.overview_head,
+.techno_head,
+.aboutus_head,
+.careers_head1,
+.careers_head2 {
+    font-size: 70pt;
+    font-family: Haettenschweiler, "Arial Narrow", sans-serif;
+    display: block;
+    clear: both;
+    margin-bottom: 25pt;
+}
+
+.overview_head {
+    color: $brick_light;
+}
+            
+.overview_foot img {
+    margin-right: 30pt;
+}
+
+.overview_matter,
+.techno_matter,
+.aboutus_matter,
+.careers_matter {
+    font-family: Tahoma;
+    font-size: 18pt;
+    color: white;
+    line-height: 44px;
+    margin-bottom: 25pt;
+    display: block;
+    clear: both;
+}
+
+.techno_head {
+    color: $white;
+}
+            
+.aboutus_head {
+    color: $white;
+    b {
+        color: $green;
+    }
+}
+            
+.aboutus_profile {
+    font-family: Tahoma;
+    color: white;
+    vertical-align: top;
+    text-align: right;
+    line-height: 32pt;
+    font-size: 18pt;
+    text-align: left;
+
+    b {
+        color: darkgreen;
+        font-size: 26pt;
+    }
+}
+
+.careers_head1 {
+    color: $brick_hard;
+    clear: left !important;
+}
+
+.careers_chain {
+}
+
+.careers_head2 {
+    color: $brick_light;
+    clear: right !important;
+}
+
+.contactus_head {
+    font-family: georgia;
+    font-size: 26pt;
+    color: $brick_light;
+    margin-top: 32pt; 
+    float: right;
+    clear: both;
+}
+
+.contactus_matter {
+    font-family: georgia;
+    font-size: 18pt;
+    color: $brick_light;
+    float: right;
+    clear: both;
+    margin-bottom: 22pt;
+}
+
+.contactus_foot {
+    font-family: Tahoma;
+    font-size: 16pt;
+    font-weight: normal;
+    color: $white;
+    vertical-align: middle;
+    margin-right: 50pt;
+    margin-top: 12pt;
+    float: right;
+}
+
+.contactus_foot_btn {
+    float: right;
+    margin-left: 3pt;
+}
+
+.creditslink {
+    color: $white;
+    font-size: 10pt;
+    font-family: tahoma;
+    text-decoration: none;
+    font-weight: normal;
+    float: right; 
+}
+
+/* bug: somehow moving it to top, makes overlap_pages
+        impotent. */
+
+.overlap_pages {
+    background: rgba(0,0,0,0); 
+    z-index: 1;
+    .x-panel-body {
+        background: rgba(0,0,0,0); 
+    }
+}
+
+.showlink {
+    cursor: pointer;
+}
+
+.round-corners {
+    -moz-border-radius: 4pt;
+    -webkit-border-radius: 4pt;
+    -o-border-radius: 4pt;
+    -ms-border-radius: 4pt;
+    -khtml-border-radius: 4pt;
+    border-radius: 4pt;
+}

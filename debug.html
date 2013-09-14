@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title id="page-title">Flip Flop App</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+        }
+
+        #appLoadingSplash {
+            width: 100%;
+            height: 100%;
+            background-image: url(images/flip-flop-splash.png);
+            background-size: 100% 100%;
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -140px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 280px;
+            width: 280px;
+            -webkit-border-radius: 140px;
+            margin: 0 5px;
+            opacity: 0.2;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+
+    <script>
+          document.write(
+              '<link rel="stylesheet" href="flipflop.css">'
+            + '<link rel="stylesheet" href="extjs/ext-all.css">'
+            + '<script src="extjs/ext.js"></'+'script>'
+            + '<script src="app.js"></'+'script>'
+          );
+    </script>
+</head>
+
+<body>
+  <div id="appLoadingSplash" onload="loadapp();">
+    <div id="appLoadingIndicator">
+        <div></div>
+    </div>
+  </div>
+</body>
+</html>
