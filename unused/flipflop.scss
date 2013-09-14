@@ -1,0 +1,262 @@
+
+$white: #fff;
+$orange: #F1AB02;
+$green: #A4CD39;
+$brick_hard: #D25901;
+$brick_light: #960000;
+$blue_soft: #E4F4FA;
+
+$ff: 10;
+
+$fontsize_A: $ff*7;
+$fontsize_B: $ff*4.4;
+$fontsize_C: $ff*3;
+$fontsize_D: $ff*2.6;
+$fontsize_E: $ff*2.4;
+$fontsize_F: $ff*1.8;
+$fontsize_G: $ff*1.6;
+$fontsize_H: $ff;
+
+.x-viewport {
+    overflow: visible !important; 
+}
+
+.mainbody .x-panel-body {
+    overflow: visible; 
+    background-color: $orange;
+    border-width: 0px;
+}
+
+.boxOne .x-panel-body {
+    overflow: visible; 
+    background-color: $white;
+}
+
+.boxEven .x-panel-body {
+    overflow: visible; 
+    background-color: $orange;
+    border-width: 0px;
+}
+
+.boxOdd .x-panel-body {
+    overflow: visible; 
+    background-color: $green;
+    border-width: 0px;
+}
+
+.boxEven, .boxOdd {
+    overflow: visible !important;
+    .x-box-inner {
+        overflow: visible !important;
+    }
+} 
+
+
+.intro_head1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: $fontsize_B;
+    color: $brick_hard;
+    letter-spacing: 3pt;
+    font-weight: 900;
+}
+
+.intro_head2 {
+    color: $orange;
+    font-size: $fontsize_C;
+    font-family: tahoma;
+    font-weight: 900;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+.small {
+    font-size: $fontsize_H;
+    font-weight: normal;
+}
+
+.overview_head {
+    font-size: $fontsize_A;
+    font-weight: bold;
+    color: $brick_light;
+    letter-spacing: 6pt;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+    display: block;
+    clear: both;
+    margin-bottom: 25pt;
+}
+            
+.overview_foot {
+}
+
+.overview_matter {
+    font-family: Georgia;
+    font-size: $fontsize_F;
+    font-weight: bold;
+    color: white;
+    line-height: 32px;
+    letter-spacing: 3pt;
+    word-spacing: 5pt;
+    margin-bottom: 25pt;
+    display: block;
+    clear: both;
+}
+
+.techno_head {
+    font-size: $fontsize_A;
+    font-weight: bold;
+    color: $white;
+    letter-spacing: 6pt;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+}
+            
+.techno_matter {
+    font-family: Tahoma;
+    font-size: $fontsize_F;
+    font-weight: normal;
+    color: white;
+    line-height: 44px;
+
+    b {
+        color: $blue_soft;
+        font-size: $fontsize_C;
+    }
+}
+
+.aboutus_head {
+    font-size: $fontsize_A;
+    font-weight: bold;
+    color: $white;
+    letter-spacing: 6pt;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+
+    b {
+        color: $orange;
+    }
+}
+            
+.aboutus_matter {
+    font-family: Tahoma;
+    font-size: $fontsize_E;
+    font-weight: normal;
+    color: white;
+    line-height: 44px;
+}
+
+.aboutus_profile {
+    font-family: Georgia;
+    font-weight: bold;
+    color: white;
+    vertical-align: top;
+    text-align: right;
+    line-height: 32pt;
+    font-size: $fontsize_F;
+    text-align: left;
+
+    b {
+        color: $orange;
+        font-size: $fontsize_D;
+        font-weight: bold;
+    }
+}
+
+.careers_head1 {
+    font-size: $fontsize_A;
+    font-weight: bold;
+    color: $brick_hard;
+    letter-spacing: 6pt;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+}
+
+.careers_chain {
+}
+
+.careers_head2 {
+    font-size: $fontsize_A;
+    font-weight: bold;
+    color: $brick_light;
+    letter-spacing: 6pt;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+}
+
+.careers_matter {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: $fontsize_F;
+    color: $white;
+
+    vertical-align: top;
+    word-spacing: 5pt;
+    letter-spacing: 2pt;
+    line-height: 32pt;
+    margin-bottom: 44;
+
+    float: left;
+    clear: both;
+}
+
+.contactus_head {
+    font-family: georgia;
+    font-size: $fontsize_D;
+    font-weight: bold;
+    color: $brick_light;
+    margin-top: 32pt; 
+    float: right;
+    clear: both;
+}
+
+.contactus_matter {
+    font-family: georgia;
+    font-size: $fontsize_F;
+    font-weight: bold;
+    color: $brick_light;
+    float: right;
+    clear: both;
+    margin-bottom: 22;
+}
+
+.contactus_foot {
+    font-family: Tahoma;
+    font-size: $fontsize_G;
+    font-weight: normal;
+    color: $white;
+    vertical-align: middle;
+    margin-right: 50;
+    margin-top: 12;
+    float: right;
+}
+
+.contactus_foot_btn {
+    float: right;
+    margin-left: 3;
+}
+
+.creditslink {
+    color: $white;
+    font-size: $fontsize_H;
+    font-family: tahoma;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-weight: normal;
+    float: right; 
+}
+
+/* bug: somehow moving it to top, makes overlap_pages
+        impotent. */
+
+.overlap_pages {
+    background: rgba(0,0,0,0); 
+    z-index: 1;
+    .x-panel-body {
+        background: rgba(0,0,0,0); 
+    }
+}
+
+.showlink {
+    cursor: hand;
+}
+
