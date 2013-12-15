@@ -300,18 +300,6 @@ contactus = Ext.create('Ext.panel.Panel', {
                         },
                         {
                             xtype: 'image',
-                            src: 'images/bitbucket-button.png',
-                            cls: 'contactus_foot_btn',
-                            overCls: 'showlink',
-                            listeners: {
-                                click: {
-                                    element: 'el',
-                                    fn: function() { window.open ( 'https://bitbucket.org/flipflopapp' ); }
-                                }
-                            }
-                        },
-                        {
-                            xtype: 'image',
                             src: 'images/github-button.png',
                             cls: 'contactus_foot_btn',
                             overCls: 'showlink',
