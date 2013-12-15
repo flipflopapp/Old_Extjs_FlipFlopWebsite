@@ -69,9 +69,7 @@ Ext.application({
                     },
                     items: [
                         introduction,
-                        overview,
                         technologies,
-                        aboutus,
                         careers,
                         contactus
                     ]
@@ -104,7 +102,7 @@ introduction = Ext.create('Ext.panel.Panel', {
                 {
                     xtype: 'label',
 //                    html: '<a class="intro_head1" href="http://flipflopapp.blogspot.in/" target="_blank">The Art<br>of web and mobility<br><span class="small">Click to read blog</span></a>',
-                    html: '<a class="intro_head1" href="https://github.com/flipflopapp" target="_blank">The Art<br>of web and mobility<br><span class="small">We are on GitHub</span></a>',
+                    html: '<a class="intro_head1" href="https://github.com/flipflopapp?tab=repositories" target="_blank">The Art<br>of web and mobility<br><span class="small">We are on GitHub</span></a>',
                     style: 'float: right; clear: both; text-align: right;',
                     padding: '0 0 65 0'
                 },
@@ -118,8 +116,8 @@ introduction = Ext.create('Ext.panel.Panel', {
     ]
 });
 
-overview = Ext.create('Ext.panel.Panel', {
-    width: 900,
+technologies = Ext.create('Ext.panel.Panel', {
+    width: 950,
     height: '100%',
     cls: 'boxEven',
     //layout: 'hbox',
@@ -134,74 +132,11 @@ overview = Ext.create('Ext.panel.Panel', {
             xtype: 'panel',
 // bug-fix below lines (occurs when we open website for the first time)
             //width: 900,
-            width: 725,
+            width: 600,
             height: 600,
             //padding: '80 65 80 65',
             style: 'position: absolute !important; left: 365px; top: 80px;', 
             cls: 'overlap_pages',
-            items: [
-                {
-                    xtype: 'label',
-                    cls: 'overview_head',
-                    text: 'Overview'
-                },
-                {
-                    xtype: 'label',
-                    cls: 'overview_matter',
-                    html: [
-                        'At Flip Flop, we are passionate about making applications with great user experience.',
-                        '<br>',
-                        'Well designed apps improve collaboration, improve ',
-                        'resource utilization and save time-and-money across verticals.'
-                    ]
-                },
-                {
-                    xtype: 'container',
-                    width: '100%',
-                    cls: 'overview_foot',
-                    //layout: 'hbox',
-                    //padding: '0 0 65 0',
-                    items: [
-                        {
-                            xtype: 'image',
-                            src: 'images/apps.png'
-                        },
-                        {
-                            xtype: 'image',
-                            src: 'images/1.png'
-                        },
-                        {
-                            xtype: 'image',
-                            src: 'images/2.png'
-                        },
-                        {
-                            xtype: 'image',
-                            src: 'images/3.png'
-                        }
-                        //,
-                        //{
-                        //    xtype: 'image',
-                        //    src: 'images/4.png'
-                        //}
-                    ]
-                }
-            ]
-        }
-    ]
-});
-
-technologies = Ext.create('Ext.panel.Panel', {
-    height: '100%',
-    width: 900,
-    cls: 'boxOdd',
-
-    items: [
-        {
-            xtype: 'panel',
-            height: '100%',
-            width: 900,
-            padding: '80 65 80 200',
-            //cls: 'overlap_pages',
             items: [
                 {
                     xtype: 'label',
@@ -216,94 +151,11 @@ technologies = Ext.create('Ext.panel.Panel', {
                             xtype: 'label',
                             cls: 'techno_matter',
                             html: [
-                                'Native mobile applications on Android and iOS devices.',
-                                '<br>',
-                                'HTML5 technologies such as Sencha Touch, Backbone and PhoneGap.',
+                                'NodeJs and No-SQL databases powered web applications.',
                                 '<br><br>',
-                                'Scalable websites powered by NodeJs and No-SQL databases.',
+                                'Android and iOS applications.',
                                 '<br><br>',
-                                'Embedded devices that work with smart phones.',
-                                '<br><br>',
-                                'Testing and quality control.'
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-});
-
-process = Ext.create('Ext.panel.Panel', {
-    xtype: 'panel',
-    width: 900,
-    height: '100%',
-
-    items: [
-        {
-             xtype: 'image',
-             width: '100%',
-             src: 'images/ourbelief.png'
-        }
-    ]
-});
-    
-aboutus = Ext.create('Ext.panel.Panel', {
-    xtype: 'panel',
-    width: 485,
-    height: '100%',
-    cls: 'boxEven',  
-    
-    items: [
-        {
-            xtype: 'panel',
-            height: '100%',
-            width: 700,
-            padding: '80 65 80 65',
-            cls: 'overlap_pages',
-            items: [
-                {
-                    xtype: 'label',
-                    cls: 'aboutus_head',
-                    width: '100%',
-                    html: 'Lead by...'
-                },
-                {
-                    xtype: 'panel',
-                    layout: 'hbox',
-                    margin: '20 0 20 150',
-                    //style: 'border: 0px solid red;',
-                    items: [
-                        {
-                            xtype: 'panel',
-                            layout: 'hbox',
-                            items: [
-                                {
-                                    xtype: 'panel',
-                                    layout: 'vbox',
-                                    margin: '0 30 0 0',
-                                    items: [
-                                        {
-                                            xtype: 'image',
-                                            width: 180,
-                                            height: 240,
-                                            src: 'images/naval.png',
-                                            overCls: 'showlink',
-                                            cls: 'round-corners',
-                                            listeners: {
-                                                click: {
-                                                    element: 'el',
-                                                    fn: function() { window.open ( 'http://in.linkedin.com/in/navalsaini' ); }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            xtype: 'label',
-                                            html: '<br><b>Naval</b><br>Head of Technology',
-                                            cls: 'aboutus_profile'
-                                        }
-                                    ]
-                                }
+                                'HTML5 technologies (Sencha Touch, Backbone and Angular).'
                             ]
                         }
                     ]
