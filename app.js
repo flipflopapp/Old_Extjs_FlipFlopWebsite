@@ -153,9 +153,9 @@ technologies = Ext.create('Ext.panel.Panel', {
                             html: [
                                 'NodeJs and No-SQL databases powered web applications.',
                                 '<br><br>',
-                                'Android applications.',
+                                'HTML5 technologies (Sencha Touch, Backbone and Angular).',
                                 '<br><br>',
-                                'HTML5 technologies (Sencha Touch, Backbone and Angular).'
+                                'Android applications.'
                             ]
                         }
                     ]
