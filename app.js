@@ -175,7 +175,7 @@ careers = Ext.create('Ext.panel.Panel', {
         {
             xtype: 'panel',
             height: '100%',
-            width: 1200,
+            width: 1150,
             padding: '80 65 80 65',
             cls: 'overlap_pages',
             items: [
