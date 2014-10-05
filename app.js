@@ -276,6 +276,7 @@ contactus = Ext.create('Ext.panel.Panel', {
                     height: 51,
                     style: 'float: right; clear: both;',
                     items: [
+                        /*
                         {
                             xtype: 'image',
                             src: 'images/pinterest-button.png',
@@ -288,6 +289,7 @@ contactus = Ext.create('Ext.panel.Panel', {
                                 }
                             }
                         },
+                        */
                         {
                             xtype: 'image',
                             src: 'images/github-button.png',
