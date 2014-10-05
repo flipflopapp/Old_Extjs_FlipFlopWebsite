@@ -70,7 +70,7 @@ Ext.application({
                     items: [
                         introduction,
                         technologies,
-                        careers,
+//                        careers,
                         contactus
                     ]
                 }
@@ -225,7 +225,7 @@ careers = Ext.create('Ext.panel.Panel', {
 
 contactus = Ext.create('Ext.panel.Panel', {
     xtype: 'panel',
-    width: 900,
+    width: 450,
     height: '100%',
     cls: 'boxOdd',  
     
@@ -239,15 +239,14 @@ contactus = Ext.create('Ext.panel.Panel', {
                 {
                     xtype: 'label',
                     cls: 'contactus_head',
-                    html: 'Contact us:',
+                    html: 'Contact:',
                     style: 'float: right; clear: both;'
                 },
                 {
                     xtype: 'panel',
                     style: 'float: right; clear: both;',
-                    padding: '50 0 0 0',
                     items: [
-                        {
+                        /*{
                             xtype: 'label',
                             cls: 'contactus_matter',
                             text: '125/1, 3rd Floor,'
@@ -256,26 +255,18 @@ contactus = Ext.create('Ext.panel.Panel', {
                             xtype: 'label',
                             cls: 'contactus_matter',
                             text: 'Shahpur Jat, Hauz Khas,'
+                        },*/
+                        {
+                            xtype: 'label',
+                            cls: 'contactus_matter',
+                            html: 'NAVAL SAINI <br> (New Delhi, India)'
                         },
                         {
                             xtype: 'label',
                             cls: 'contactus_matter',
-                            text: 'New Delhi - 110049,'
-                        },
-                        {
-                            xtype: 'label',
-                            cls: 'contactus_matter',
-                            text: 'India.'
-                        },
-                        {
-                            xtype: 'label',
-                            cls: 'contactus_matter',
-                            text: 'E: flipflopapps@gmail.com'
-                        },
-                        {
-                            xtype: 'label',
-                            cls: 'contactus_matter',
-                            text: 'P: +91-9560375909'
+                            html: 'Skype: navalsaini <br>' +
+                                  'Mail: flipflopapps@gmail.com <br>' +
+                                  'Phone: +91-9560375909'
                         }
                     ]
                 },
@@ -283,7 +274,6 @@ contactus = Ext.create('Ext.panel.Panel', {
                     xtype: 'panel',
                     width: '100%',
                     height: 51,
-                    margin: '50 0 0 0',
                     style: 'float: right; clear: both;',
                     items: [
                         {
@@ -309,11 +299,6 @@ contactus = Ext.create('Ext.panel.Panel', {
                                     fn: function() { window.open ( 'https://github.com/flipflopapp' ); }
                                 }
                             }
-                        },
-                        {
-                            xtype: 'label',
-                            cls: 'contactus_foot',
-                            text: 'Follow Us'
                         }
                     ]
                 }, 

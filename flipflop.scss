@@ -71,6 +71,7 @@ $blue_soft: #E4F4FA;
 .overview_head,
 .techno_head,
 .aboutus_head,
+.contactus_head,
 .careers_head1,
 .careers_head2 {
     font-size: 70pt;
@@ -91,6 +92,7 @@ $blue_soft: #E4F4FA;
 .overview_matter,
 .techno_matter,
 .aboutus_matter,
+.contactus_matter,
 .careers_matter {
     font-family: Tahoma;
     font-size: 18pt;
@@ -141,21 +143,16 @@ $blue_soft: #E4F4FA;
 }
 
 .contactus_head {
-    font-family: georgia;
-    font-size: 26pt;
-    color: $brick_light;
-    margin-top: 32pt; 
+    color: $white;
     float: right;
     clear: both;
 }
 
 .contactus_matter {
-    font-family: georgia;
-    font-size: 18pt;
-    color: $brick_light;
+    color: $white;
+    text-align: right;
     float: right;
     clear: both;
-    margin-bottom: 22pt;
 }
 
 .contactus_foot {
